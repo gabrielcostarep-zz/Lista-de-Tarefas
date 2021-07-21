@@ -7,9 +7,9 @@ Acesse a página [Clicando Aqui](https://gabrielcostarep.github.io/Lista-de-Tare
 
 Este projeto foi desenvolvido com as seguintes tecnologias:
 
+- ✔️ JavaScript
 - ✔️ HTML
 - ✔️ CSS
-- ✔️ JavaScript
 
 <br>
 
