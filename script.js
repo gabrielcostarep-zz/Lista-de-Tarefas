@@ -1,18 +1,19 @@
-var tarefas = [];
+var tarefas = JSON.parse(localStorage.getItem("tarefas")) || [];
+
 onload = function () {
-    let ta = JSON.parse(localStorage.getItem("tarefas"));
-    if (ta == null) {
+    if (tarefas == null) {
         let lista = document.getElementById("ul");
         lista.style.display = "none";
     } else {
         function regist() {
             let lista = document.getElementById("ul");
-            let li = document.createElement("li");
+            let conteudo = "";
 
-            lista.appendChild(li);
-            li.textContent = ta;
+            tarefas.forEach((elemento_array) => {
+                conteudo += '<li>' + elemento_array + '</li>';
+            });
+            lista.innerHTML = conteudo;
         }
-
         regist();
     }
 }
@@ -26,7 +27,8 @@ function addTask() {
     } else if (hr === "") {
         alert("Insira um horário")
     } else {
-        tarefas.push(JSON.stringify(inp + " - " + hr));
-        localStorage.setItem("tarefas", tarefas);
+        tarefas.push(inp + " - " + hr);
+        localStorage.setItem("tarefas", JSON.stringify(tarefas));
+        location.reload();
     }
 }
