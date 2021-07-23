@@ -10,7 +10,9 @@ onload = function () {
             let conteudo = "";
 
             tarefas.forEach((elemento_array) => {
-                conteudo += '<li>' + elemento_array + '</li>';
+                conteudo += '<li style="list-style-type: none;">' + elemento_array + '</li>';
+                /* conteudo += `<li>${elemento_array}</li>`; 
+                Uma outra maneira de ter o mesmo resultado */
             });
             lista.innerHTML = conteudo;
         }
@@ -31,4 +33,9 @@ function addTask() {
         localStorage.setItem("tarefas", JSON.stringify(tarefas));
         location.reload();
     }
+}
+
+function apagarTudo() {
+    localStorage.clear();
+    location.reload();
 }
