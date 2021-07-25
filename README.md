@@ -1,6 +1,6 @@
 🏗️ Exemplo de uma página com uma lista de tarefas utilizando JavaScript
 
-Acesse a página [Clicando Aqui](https://gabrielcostarep.github.io/Lista-de-Tarefas/)
+➡️ [Acesse a página clicando aqui](https://gabrielcostarep.github.io/Lista-de-Tarefas/) ⬅️
 
  <div align="center" >
   <img src="./Readme-cell-gif.gif" alt="demo-mobile" height="425">
