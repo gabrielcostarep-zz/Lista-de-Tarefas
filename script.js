@@ -1,3 +1,4 @@
+// Verificar se ja existe algo no localstorage, se nao determina um array vazio
 var tarefas = JSON.parse(localStorage.getItem("tarefas")) || [];
 
 // Toda vez que a pagina for recarregada, essa funcao sera chamada
