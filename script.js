@@ -11,8 +11,10 @@ onload = function () {
 
             tarefas.forEach((elemento_array) => {
                 conteudo += '<li style="list-style-type: none;">' + elemento_array + '</li>';
-                /* conteudo += `<li>${elemento_array}</li>`; 
-                Uma outra maneira de ter o mesmo resultado */
+
+                // Uma outra maneira de ter o mesmo resultado:
+                // conteudo += `<li style="list-style-type: none;">${elemento_array}</li>`;
+
             });
             lista.innerHTML = conteudo;
         }
